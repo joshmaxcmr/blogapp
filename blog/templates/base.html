@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400" rel="styleshee\t">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+
+</head>
+<body>
+<header>
+    <h1><a href="{% url 'home' %}">Custom blog</a></h1>
+</header>
+<div>
+    {% block content %}
+    {% endblock content %}
+</div>
+
+</body>
+</html>
